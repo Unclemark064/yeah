@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3000;
-
+const port = 3000;
 const https = require("https");
 const bodyParser = require("body-parser");
 const { log } = require("console");
@@ -48,6 +47,6 @@ app.post("/work", function (req, res) {
   res.redirect("/work");
 });
 
-app.listen(POST, () => {
-  console.log(`Example app listening on port ${POST}`);
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
 });
